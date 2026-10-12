@@ -1,0 +1,23 @@
+[project]
+name = "honor-inter-font"
+version = "1.0.0"
+description = "Inter as the system font on Honor phones, packed as a MagicOS font theme"
+requires-python = ">=3.14"
+dependencies = [
+    "pillow==12.3.0",
+]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.17.0",
+]
+
+[tool.ruff]
+line-length = 120
+target-version = "py314"
+
+[tool.ruff.format]
+quote-style = "single"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP", "SIM"]
